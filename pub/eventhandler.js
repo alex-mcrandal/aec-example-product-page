@@ -308,9 +308,6 @@ async function submitLogo() {
 		top = logoPosition.top;
 		left = logoPosition.left;
 		rotation = logoPosition.rotation;
-
-
-		backgroundColor = itemImg.getPixelXY( Math.floor(itemImg.width * left / 100), Math.floor(itemImg.height * top / 100) );
 	}
 	else {
 		let modelResult = itemModel.activate(itemImg);
@@ -319,10 +316,11 @@ async function submitLogo() {
 		top = config[modelResult].top;
 		left = config[modelResult].left;
 		rotation = 0;
-
-
-		backgroundColor = itemImg.getPixelXY( Math.floor(itemImg.width * left / 100), Math.floor(itemImg.height * top / 100) );
 	}
+
+	let backgroundX = Math.floor(itemImg.width * left / 100 + width / 2);
+	let backgroundY = Math.floor(itemImg.width * top / 100 + width / 2);
+	backgroundColor = itemImg.getPixelXY(backgroundX, backgroundY);
 
 	//console.log('Found logo dimensions');
 
