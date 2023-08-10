@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Product Page</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initail-scale="1">
+
+	<link rel="stylesheet" href="styles.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="convnet-min.js"></script>
+	<script src="https://www.lactame.com/lib/image-js/0.21.2/image.min.js"></script>
+	<script src="item-prediction.js"></script>
+	<script src="eventhandler.js"></script>
+</head>
+
+<body>
+	<header>
+		<p>URE Test Online Store</p>
+	</header>
+	<div id="maincontent">
+		<div id="column-image" class="column">
+			<img id="image-left" class="item-arrow" src="left-arrow.png">
+			<div id="image-container">
+				<img id="item" src="">
+				<div id="image-rotate">
+					<img id="logo" src="">
+				</div>
+			</div>
+			<img id="image-right" class="item-arrow" src="right-arrow.png">
+		</div>
+		<div id="column-selection" class="column">
+			<input type="button" value="Select Logo" id="select-logo" class="button">
+			<div id="logo-selector">
+				<div id="logos">
+				</div>
+				<input type="button" value="Submit" id="submit-logo" class="button">
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>AEC Online Store</p>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+	"name": "t-shirt-1234",
+	"blanks": ["black-shirt.jpg", "blue-shirt.jpg", "navy-shirt.jpg", "white-shirt.jpg"],
+	"useCustomPositioning": false,
+	"logoWidth": 100,
+	"logoTop": 20,
+	"logoLeft": 50,
+	"logoRotation": 0,
+	"productionType": "heat"
+}
